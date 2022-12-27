@@ -1,0 +1,51 @@
+.container {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }
+  .btn2 {
+    margin-left: 42rem;
+  }
+  #hello {
+    color: brown;
+    text-align: center;
+    font-size: 30px;
+  }
+  pre {
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+  }
+  .child {
+    text-align: center;
+    margin: 3px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: blueviolet;
+  }
+  body{
+      border: 5px solid black;
+      padding: 20px;
+      background-color:white;
+  }
+  .container1{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .child1{
+    color: white;
+    font-size: larger;
+  }
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Hands On</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Question:1-Write the code to access element which is having id as "text"</h1>
+    <div id="text">I am div with id text.(for reference)</div>
+    <pre>const element=document.getElementById('text');
+        //console.log(element);
+    </pre>
+    <h1>Question:2-Write the code to access element which is having tag as "h1"</h1>
+    <pre>const element=document.getElementsByTagName('h1')</pre>
+    <h1>Question:3-Write the code to access element which is having class as "box"</h1>
+    <pre>const el1=document.getElementsByClassName('box');
+        //it will give HTMLCollection [div.box]
+        //and for doing operation onit we have to use index as well as.
+    </pre>
+    <h1>Question:4-"&lt;h1&gt;Hello &lt;/h1&gt;Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h1>
+    
+    <h2 id="hello">Hello</h2>
+    <button class="btn2"onclick="changehello()">changehello</button>
+
+    <h1>Question:5-Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h1>
+    <div class="container">
+        <div class="child">card1</div>
+        <div class="child">card2</div>
+        <div class="child">card3</div>
+        <div class="child">card4</div>
+    </div>
+<button onclick="changedirection()">change direction</button>
+<button onclick="previousdrection()">previous direction</button>
+<h1>Question:6-What’s the difference between window vs document?</h1>
+<p>
+    <h2>Window</h2>
+    The Browser Object Model contains objects that represent the current browser window or tab. The topmost object in the BOM is the window object representing the window or tab or an iframe sometimes. Window object has properties like browser history, location and the device’s screen etc. In case of multi tab browser, a window object represents a single tab, but some of its properties like innerHeight, innerWidth and methods like resizeTo() will affect the whole browser window.
+
+    <h2>Document Object Model</h2>
+    When a web page is loaded, the browser creates a Document Object Model of the page. The document object represents the whole html document as a tree of Objects(HTML, HEAD, BODY, and other HTML tags). It is the root element that represents the html document.</p>
+    <h1>Question:7-"&lt;h1&gt;Hello &lt;/h1&gt;
+
+    Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h1>
+    <h1>Hello.....</h1>
+    <pre>
+        const targetelement=document.getElementsByTagName('h1');
+        // const colorAtt =document.createAttribute('color')
+        targetelement[7].style.color="red";
+        targetelement[7].setAttribute('id','heading');</pre>
+        <h1>Question :8-Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h1>
+        <h1 class="replacetext">Hello World</h1>
+        <button onclick="replacetext()">Replace Text</button>
+        <button onclick="GOBACK()">Go Back</button>
+        <h1>Question:9-Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h1>
+
+        <div class="container1">
+            <span id="hours" class="child1">00</span>
+            <span id="mins" class="child1">00</span>
+            <span id="secs" class="child1">00</span> 
+            <span id="section" class="child1">AM</span> 
+        </div>
+        <h1>Question:10-Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</h1>
+        <select name="" id="text1">
+        
+            <option value="20-21">Year 20-21</option>
+            <option value="21-22">Year 21-22</option>
+            <option value="22-23">Year 22-23</option>
+            <option value="23-24">Year 23-24</option>
+            <option value="24-25">Year 24-25</option>
+            <option value="25-26">Year 25-26</option>
+            
+            </select> <br><br><br>
+            <button onclick="getOption()"class="btn">Click here</button>
+            <p>The value of the selcted Option is :
+            <span id="output"></span>
+        </p>
+
+<script src="index.js"></script>
+</body>
+</html>
